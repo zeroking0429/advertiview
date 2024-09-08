@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "advertiview",
+  "description": "엔트리 이야기에서 홍보 작품을 미리 볼 수 있습니다!",
+  "version": "0.9.6",
+  "web_accessible_resources": [
+    {
+      "resources": ["advertiview.css", "advertiview.js"],
+      "matches": ["https://*.playentry.org/*"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.playentry.org/community/*"],
+      "css": ["advertiview.css"],
+      "js": ["advertiview.js"]
+    }
+  ]
+}
