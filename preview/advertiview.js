@@ -7,19 +7,26 @@ window.onload = function () {
       .forEach((i) => {
         if (i.classList.item(0) !== "changed") {
           console.log(
-            (i.innerHTML = `
-            <br>
-            <a target="_blank" href="https://playentry.org/project/${i.href.slice(
-              30
-            )}" rel="noreferrer">
-              <iframe width="320px" height="220px" class="xproject-preview" title="${i.href.slice(
-                30
-              )}" src="/iframe/${i.href.slice(30)}"></iframe>
-              <br><br>
-              <span class="goto-project">바로가기&rarr;<span>
-            </a>
-            <br><br>
-          `),
+            (i.outerHTML = `
+              <div>
+                <a target="_blank" href="https://playentry.org/project/${i.href.slice(
+                  30
+                )}" rel="noreferrer">
+                  https://playentry.org/project/${i.href.slice(30)}
+                </a>
+                <details class="preview-button">
+                  <summary>미리보기</summary>
+                  <iframe width="320px" height="220px" title="${i.href.slice(
+                    30
+                  )}" src="/iframe/${i.href.slice(30)}"></iframe>
+                  <a class="goto-project" target="_blank" href="https://playentry.org/project/${i.href.slice(
+                    30
+                  )}" rel="noreferrer">
+                    <span>바로가기&rarr;<span>
+                  </a>
+                </details>
+              </div>
+            `),
             i.classList.add("changed")
           );
         }
