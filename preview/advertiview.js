@@ -8,7 +8,7 @@ window.onload = function () {
         if (i.classList.item(0) !== "changed") {
           console.log(
             (i.outerHTML = `
-              <div>
+              <div class="pp">
                 <a target="_blank" href="https://playentry.org/project/${i.href.slice(
                   30
                 )}" rel="noreferrer">

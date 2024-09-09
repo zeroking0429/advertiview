@@ -27,7 +27,12 @@ iframe {
   width: 75px;
   height: 20px;
   &[open] {
+    border: none;
     width: 330px;
     height: auto;
   }
+}
+
+.pp {
+  user-select: none;
 }
