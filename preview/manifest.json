@@ -3,6 +3,12 @@
   "name": "promotionview",
   "description": "엔트리 이야기에서 홍보 작품을 미리 볼 수 있습니다!",
   "version": "0.12.3",
+  "web_accessible_resources": [
+    {
+      "resources": ["promotionview.css", "promotionview.js"],
+      "matches": ["https://*.playentry.org/*"]
+    }
+  ],
   "content_scripts": [
     {
       "matches": ["https://*.playentry.org/community/entrystory/list/*"],
