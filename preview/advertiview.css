@@ -1,19 +1,17 @@
 iframe {
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 10px;
   padding: 5px;
 }
 
 .goto-project {
-  border-radius: 50px;
-  background-color: rgb(22, 216, 163);
   text-decoration: none;
   padding: 10px 20px;
   margin-top: 20px;
   margin-bottom: 10px;
   width: 70px;
   span {
-    color: white;
+    color: gray;
   }
 }
 
@@ -22,14 +20,19 @@ iframe {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
+  border-radius: 10px;
   background-color: white;
   padding: 10px 10px;
-  width: 75px;
-  height: 20px;
+  width: 330px;
+  background-color: #e9ecef;
   &[open] {
-    border: none;
-    width: 330px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: white;
     height: auto;
+    summary {
+      padding-bottom: 10px;
+      border-bottom: 1px solid black;
+    }
   }
 }
 

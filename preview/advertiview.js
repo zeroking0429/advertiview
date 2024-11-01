@@ -15,15 +15,15 @@ window.onload = function () {
                   https://playentry.org/project/${i.href.slice(30)}
                 </a>
                 <details class="preview-button">
-                  <summary>미리보기</summary>
-                  <iframe width="320px" height="220px" title="${i.href.slice(
-                    30
-                  )}" src="/iframe/${i.href.slice(30)}"></iframe>
-                  <a class="goto-project" target="_blank" href="https://playentry.org/project/${i.href.slice(
+                  <summary>Preview <a class="goto-project" target="_blank" href="https://playentry.org/project/${i.href.slice(
                     30
                   )}" rel="noreferrer">
                     <span>바로가기&rarr;<span>
-                  </a>
+                  </a></summary>
+                  <iframe width="320px" height="220px" title="${i.href.slice(
+                    30
+                  )}" src="/iframe/${i.href.slice(30)}"></iframe>
+                  
                 </details>
               </div>
             `),
