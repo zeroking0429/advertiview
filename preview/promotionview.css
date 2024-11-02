@@ -25,9 +25,10 @@ iframe {
   padding: 10px 10px;
   background-color: #e9ecef;
   &[open] {
-    padding: 10px 10px;
+    padding: 10px;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 0;
     border-radius: 10px 10px 0px 0px;
     height: auto;
     summary {

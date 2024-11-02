@@ -1,4 +1,4 @@
-window.onload = function () {
+window.onload = () => {
   const link2Project = () => {
     document
       .querySelectorAll(
